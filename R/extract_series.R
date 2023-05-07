@@ -1,7 +1,6 @@
 
 
-extract_series <- function(.building_id, q, last = NULL){
-
+extract_series <- function(.building_id, q, last = NULL) {
   df <- read_csv("train.csv")
 
   df_red <- df %>%
@@ -15,5 +14,4 @@ extract_series <- function(.building_id, q, last = NULL){
 
 
   return(df_red_padded)
-
 }
